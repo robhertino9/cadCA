@@ -4,3 +4,7 @@
     <%= link_to "About us", about_path, class: "btn btn-secondary" %>
     <%= link_to "Contact Us", contact_path, class: "btn btn-primary" %>
 </div>
+
+    <% @a_biblia_digital.each do |verse| %>
+    <p><%= verse %></p>
+    <% end %>

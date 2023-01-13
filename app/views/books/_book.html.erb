@@ -1,10 +1,10 @@
 <div id="<%= dom_id book %>">
 
     <h2><%= book.title %></h2>
-    <h4>Posted by <%= link_to book.user.name, user_path(book.user) %></h4>
-    <h6><%= pluralize(book.views, "view") %></h6>
+    <h4>Added by <%= link_to book.user.name, user_path(book.user) %></h4>
+    <h5><%= book.author %></h5>
 <div>
-    <%= book.author %>
     <%= book.description %>
+    <%= pluralize(book.views, "view") %>
 </div>
 </div>
