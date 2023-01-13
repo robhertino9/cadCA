@@ -7,6 +7,11 @@
         This application was developed by Robertas Kuchtovas - x20124287<br>
         Please visit the contact page if you have any more questions</h4>
         <a class="btn btn-outline-light btn-lg text-black" href="contact" role="button">Contact us</a>
+        <h4 class="mb-3">Here is a random verse from the bible below please enjoy.<br>
+        It is written in portugese!</h4>
+        <h5><% @a_biblia_digital.each do |verse| %>
+    <p><%= verse %></p></h5>
+    <% end %>
       </div>
     </div>
   </div>

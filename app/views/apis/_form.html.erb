@@ -1,0 +1,22 @@
+<%= form_with(model: api) do |form| %>
+  <% if api.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(api.errors.count, "error") %> prohibited this api from being saved:</h2>
+
+      <ul>
+        <% api.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :api, style: "display: block" %>
+    <%= form.text_field :api %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
