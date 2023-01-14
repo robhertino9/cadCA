@@ -1,9 +1,14 @@
+<% if current_user %>
 <p style="color: green"><%= notice %></p>
 <div class="container">
 <%= render @book %>
 
 <div>
+<%= link_to "Edit this book", edit_book_path(@book) if current_user.admin? %>
   <%= link_to "Back to books", books_path %>
+
+  <%= button_to "Destroy this book", @book, method: :delete if current_user.admin? %>
 
 </div>
 </div>
+<% end %>

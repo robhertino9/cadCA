@@ -1,2 +1,41 @@
-<h1>StaticPage#contact</h1>
-<p>Find me in app/views/static_page/contact.html.erb</p>
+<form enctype="multipart/form-data" method="post" action="https://www.freedback.com/mail.php" accept-charset="UTF-8">
+<div>
+<input type="hidden" name="acctid" id="acctid" value="2bhfgwl7iuile0fo" />
+<input type="hidden" name="formid" id="formid" value="2004404" />
+<input type="hidden" name="required_vars" id="required_vars" value="name,email,field-message" />
+</div>
+<table cellspacing="5" cellpadding="5" border="0">
+<tr>
+<td valign="top">
+<strong>Name:</strong>
+</td>
+<td valign="top">
+<input type="text" name="name" id="name" size="40" value="" />
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong>Email Address:</strong>
+</td>
+<td valign="top">
+<input type="text" name="email" id="email" size="40" value="" />
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong>Message:</strong>
+</td>
+<td valign="top">
+<textarea name="field-message" id="field-message" rows="6" cols="40"></textarea>
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value=" Submit Form " />
+</td>
+</tr>
+</table>
+</form>

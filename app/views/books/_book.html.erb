@@ -1,3 +1,4 @@
+<% if current_user %>
 <div id="<%= dom_id book %>">
 
     <h2><%= book.title %></h2>
@@ -8,3 +9,5 @@
     <%= pluralize(book.views, "view") %>
 </div>
 </div>
+
+<% end %>

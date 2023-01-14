@@ -3,8 +3,8 @@
     <p>Take a look at the books tab!</p>
     <%= link_to "About us", about_path, class: "btn btn-secondary" %>
     <%= link_to "Contact Us", contact_path, class: "btn btn-primary" %>
-    <h2>Enjoy a random dog fact on us!</h2>
+    <p class="text-center"><h2>Enjoy a random dog fact on us!</h2>
     <% @dog_fact.each do |facts| %>
-    <%= facts %>
+    <%= facts %></p>
     <% end %>
 </div>
